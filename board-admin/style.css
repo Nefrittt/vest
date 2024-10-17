@@ -230,6 +230,7 @@ main {
 }
 
 /* Posts */
+
 .posts {
    display: grid;
    gap: 8px;
