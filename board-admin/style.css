@@ -27,6 +27,10 @@ body {
    opacity: 60%;
 }
 
+.bold700 {
+   font-weight: 700;
+}
+
 h1 {
    font-family: "Roboto", sans-serif;
    font-weight: 700;
@@ -174,19 +178,23 @@ main {
 .posts-search {
    display: flex;
    align-items: center;
-   height: 90px;
+   height: 97px;
+   width: 100%;
 }
+
 .search {
    position: relative;
 
 }
-.search input{
+
+.search input {
    display: block;
    height: 40px;
    width: 420px;
    padding-left: 20px;
    border: none;
 }
+
 .search input::placeholder {
    font-family: "Roboto", sans-serif;
    font-size: 14px;
@@ -194,8 +202,120 @@ main {
    color: #2A2F37;
    opacity: 40%;
 }
+
 .search img {
    position: absolute;
    top: 8px;
    right: 15px;
+}
+
+.filter {
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   gap: 16px;
+   width: 159px;
+   height: 40px;
+   padding: 16px;
+   margin-left: 10px;
+   font-weight: 500;
+   background-color: #2A2F3714;
+}
+
+.pagination {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   margin-left: auto;
+}
+
+/* Posts */
+.posts {
+   display: grid;
+   gap: 8px;
+}
+
+.posts-th {
+   box-sizing: border-box;
+   display: grid;
+   grid-template-columns: 2fr 1.5fr 200px 150px;
+   align-items: center;
+   height: 40px;
+   padding: 12px 24px;
+   font-size: 12px;
+   font-weight: 700;
+   background-color: white;
+   opacity: 60%;
+}
+
+.posts-tr {
+   box-sizing: border-box;
+   display: grid;
+   grid-template-columns: 2fr 1.5fr 200px 150px;
+   align-items: center;
+   padding: 12px 24px;
+   height: 80px;
+   background-color: white;
+}
+
+.publish {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* Footer */
+
+footer {
+   background-color: #2A2F37;
+   height: 208px;
+   padding-bottom: 24px;
+}
+
+.footer-head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 48px 0;
+   border-bottom: 1px solid gray;
+}
+
+.footer-logo {
+   display: flex;
+   align-items: center;
+}
+
+.footer-logo img {
+   padding-right: 40px;
+   margin-right: 40px;
+   border-right: 1px solid white;
+}
+
+.footer-logo span {
+   font-size: 12px;
+   color: white;
+   opacity: 60%;
+}
+
+.meta {
+   display: flex;
+   gap: 24px;
+}
+
+.footer-foot {
+   height: 40px;
+   padding-top: 24px
+}
+
+.footer-list {
+   display: flex;
+   justify-content: space-between;
+   color: white;
+   opacity: 60%;
+   list-style: none;
+}
+
+.footer-list a {
+   color: white;
+   opacity: 80%;
 }
