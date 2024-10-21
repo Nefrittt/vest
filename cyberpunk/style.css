@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Archangelsk";
+    font-style: normal;
+    src: url(fonts/ofont.ru_Archangelsk.ttf),
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: auto;
+}
+
+.df-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 980px;
+}
+
+/* Header */
+.slider {
+    height: 1000px;
+    background-image: url(images/vi.jpg);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.meta {
+    display: flex;
+    gap: 40px;
+}
+
+.info-board {
+    box-sizing: border-box;
+    width: 624px;
+    height: 370px;
+    padding: 70px;
+    margin-left: auto;
+    background-color: #F8F200;
+    clip-path: polygon(8% 0%, 100% 0%, 100% 85%, 92% 100%, 0% 100%, 0% 15%);
+}
+
+.info-board span {
+    font-family: 'Archangelsk';
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 63.3px;
+}
+
+.info-board a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 272px;
+    height: 78px;
+    margin-top: 25px;
+    background-color: black;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: #F8F200;
+}
+/* Main -info */
+
+.main-info {
+    height: 777px;
+}
+.main-pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+}
